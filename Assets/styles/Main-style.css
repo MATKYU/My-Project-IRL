@@ -1,0 +1,50 @@
+/* Globale */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  span {
+    color: var(--PinkGalaxy);
+  }
+  
+  :root {
+    /* Variables */
+    /* Color */
+  
+    --DarkBase: #192332;
+    --whiteBase: #f7f7f7;
+    --DarkRed: #260820;
+    --PurpleGalaxy: #7c3dfe;
+    --PinkGalaxy: #ed3dff;
+    --GradianGalaxy: linear-gradient(180deg, #0a1124 0%, #4e1645 100%);
+  
+    /* style-Police */
+  
+    --font-family: "Mina", sans-serif;
+  
+    /* Taille police DESKTOP */
+  
+    --Title: 2.5rem;
+    --Sous-titre: 2.3rem;
+    --Text: 2.0rem;
+    --Info-text: 1.2rem;
+  
+    /* Taille police MOBILE */
+  
+    --Title-mobile: 1.6rem;
+    --Sous-titre-mobile: 1.4rem;
+    --Text-mobile: 1.2rem;
+    --Info-text-mobile: 1.1rem;
+  
+    --border-radius: 2.0rem;
+    --border-radius-mobile: 1.5rem;
+  }
+  
+  body {
+    background: var(--GradianGalaxy);
+  }

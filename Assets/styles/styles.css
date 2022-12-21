@@ -1,0 +1,186 @@
+/* --------------------------------------------------------------------------------- */
+/* Section 1  */
+
+.Block-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.Sous-titre {
+  font-family: var(--font-family);
+  font-size: var(--Sous-titre);
+  color: var(--whiteBase);
+  padding-bottom: 30px;
+}
+
+.IMG-TEST {
+  height: 30.0rem;
+  width: 102.1rem;
+  border-radius: var(--border-radius);
+  box-shadow: -9px 9px 0 var(--whiteBase);
+  background-image: url(/Assets/images/musée.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Text {
+  font-family: var(--font-family);
+  font-size: var(--Text);
+  color: var(--whiteBase);
+  width: 98.4rem;
+  padding-top: 30px;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* BTN nous découvrir */
+
+.block-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.lien-btn:hover {
+  background-color: var(--DarkBase);
+  color: var(--whiteBase);
+  box-shadow: -15px 5px 0 rgba(237, 61, 255, 1),
+    15px 10px 0 rgba(124, 61, 254, 1);
+  transition: ease-in 0.3s;
+}
+
+.lien-btn {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--DarkBase);
+  font-family: var(--font-family);
+  font-size: var(--Text);
+  background-color: var(--whiteBase);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.2rem;
+  width: 27.5rem;
+  border-radius: var(--border-radius);
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Section 2  */
+
+.Block-2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.Sous-titre {
+  font-family: var(--font-family);
+  font-size: var(--Sous-titre);
+  color: var(--whiteBase);
+  padding-bottom: 30px;
+}
+
+.Block-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.IMG-TEST2 {
+  /* background-color: red; */
+  height: 30.0rem;
+  width: 46.4rem;
+  border-radius: var(--border-radius);
+  box-shadow: -9px 9px 0 var(--whiteBase);
+}
+
+.IMG-TEST3 {
+  /* background-color: red; */
+  height: 30.0rem;
+  width: 46.6rem;
+  border-radius: var(--border-radius);
+  box-shadow: 9px 9px 0 var(--whiteBase);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Media query */
+
+@media screen and (max-width: 393px) {
+
+  /* --------------------------------------------------------------------------------- */
+  /* Section 1  */
+
+  .Block-1 {
+    margin-top: 30px;
+  }
+
+  .Sous-titre {
+    font-size: var(--Sous-titre-mobile);
+    padding-bottom: 30px;
+  }
+
+  .IMG-TEST {
+    height: 17.1rem;
+    width: 34.2rem;
+    border-radius: var(--border-radius-mobile);
+    box-shadow: -9px 9px 0 var(--whiteBase);
+  }
+
+  .Text {
+    font-size: var(--Text-mobile);
+    width: 34.2rem;
+    padding-top: 30px;
+  }
+
+  /* --------------------------------------------------------------------------------- */
+  /* BTN nous découvrir */
+
+  .block-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .lien-btn {
+    font-size: var(--Text-mobile);
+    height: 4.9rem;
+    width: 17.7rem;
+    border-radius: var(--border-radius-mobile);
+  }
+
+  /* --------------------------------------------------------------------------------- */
+  /* Section 2  */
+
+  .Block-2 {
+    margin-bottom: 30px;
+  }
+
+  .Sous-titre {
+    font-size: var(--Sous-titre-mobile);
+    padding-bottom: 30px;
+  }
+
+  .Block-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .IMG-TEST2 {
+    height: 17.1rem;
+    width: 34.4rem;
+    border-radius: var(--border-radius-mobile);
+    box-shadow: -9px 9px 0 var(--whiteBase);
+  }
+
+  .IMG-TEST3 {
+    height: 17.1rem;
+    width: 34.4rem;
+    border-radius: var(--border-radius-mobile);
+    box-shadow: 9px 9px 0 var(--whiteBase);
+  }
+}

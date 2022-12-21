@@ -1,0 +1,135 @@
+
+
+/* --------------------------------------------------------------------------------- */
+/* Section 1  */
+.Block {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.Block-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--whiteBase);
+  height: 35.1rem;
+  width: 51.4rem;
+  gap: 20px;
+}
+
+.IMG1 {
+  background-image: url(/Assets/images/music-electro.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 35.1rem;
+  width: 44.7rem;
+  box-shadow: -9px 9px 0 var(--whiteBase);
+  border-radius: var(--border-radius);
+}
+
+.Sous-titre {
+  font-family: var(--font-family);
+  font-size: var(--Sous-titre);
+  color: var(--whiteBase);
+}
+
+.Text {
+  font-family: var(--font-family);
+  font-size: var(--Text);
+  color: var(--whiteBase);
+}
+
+.Block-type-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.Sous-titre-type-2 {
+  font-family: var(--font-family);
+  font-size: var(--Sous-titre);
+  color: var(--whiteBase);
+  padding-bottom: 30px;
+}
+
+.Text-type-2 {
+  font-family: var(--font-family);
+  font-size: var(--Text);
+  color: var(--whiteBase);
+  width: 98.4rem;
+  padding-top: 30px;
+}
+
+.IMG2 {
+  height: 30.0rem;
+  width: 102.1rem;
+  border-radius: var(--border-radius);
+  box-shadow: -9px 9px 0 var(--whiteBase);
+  background-image: url(/Assets/images/Fauteuil.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Media query */
+
+@media screen and (max-width: 393px) {
+
+  /* --------------------------------------------------------------------------------- */
+  /* Section 1  */
+
+  .Block {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .Block-text {
+    flex-direction: column;
+    height: 10.9rem;
+    width: 33.6rem;
+    gap: 20px;
+  }
+
+  .Sous-titre {
+    font-size: var(--Sous-titre-mobile);
+  }
+
+  .Text {
+    font-size: var(--Text-mobile);
+  }
+
+  .IMG1 {
+    height: 16.1rem;
+    width: 34.2rem;
+    box-shadow: -9px 9px 0 var(--whiteBase);
+    border-radius: var(--border-radius-mobile);
+  }
+
+  .IMG2 {
+    height: 16.1rem;
+    width: 34.2rem;
+    box-shadow: -9px 9px 0 var(--whiteBase);
+    border-radius: var(--border-radius-mobile);
+  }
+
+  .Block-type-2 {
+    margin-top: 30px;
+  }
+
+  .sous-titre-type-2 {
+    font-size: var(--Sous-titre-mobile);
+    padding-bottom: 30px;
+  }
+
+  .Text-type-2 {
+    font-size: var(--Text-mobile);
+    width: 34.2rem;
+    padding-top: 30px;
+  }
+}

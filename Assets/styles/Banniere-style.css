@@ -1,0 +1,49 @@
+/* --------------------------------------------------------------------------------- */
+/* Bannière */
+
+.banniere {
+    background-color: var(--whiteBase);
+    border-radius: var(--border-radius);
+    height: 12.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.title {
+    color: var(--PinkGalaxy);
+    font-family: var(--font-family);
+    font-size: var(--Title);
+    background-color: var(--whiteBase);
+}
+
+@media screen and (max-width: 393px) {
+
+    /* --------------------------------------------------------------------------------- */
+    /* Bannière */
+
+    .banniere {
+        background-color: var(--whiteBase);
+        border-radius: var(--border-radius-mobile);
+        height: 5.0rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .title {
+        color: var(--PinkGalaxy);
+        font-family: var(--font-family);
+        font-size: var(--Sous-titre-mobile);
+        background-color: var(--whiteBase);
+        border-radius: var(--border-radius-mobile);
+    }
+}

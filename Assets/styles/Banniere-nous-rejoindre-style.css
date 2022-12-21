@@ -1,0 +1,57 @@
+/* --------------------------------------------------------------------------------- */
+/* Bannière nous rejoindre  */
+
+.block-btn-Join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18.0rem;
+    background-image: url(/Assets/images/ClaviersPC.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--border-radius);
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.link-btn-Join:hover {
+    background-color: var(--DarkBase);
+    color: var(--PurpleGalaxy);
+    box-shadow: 0 5px 0 var(--whiteBase);
+    transition: ease-in 0.3s;
+}
+
+.link-btn-Join {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--PurpleGalaxy);
+    font-family: var(--font-family);
+    font-size: var(--Text);
+    background-color: var(--whiteBase);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.2rem;
+    width: 27.5rem;
+    border-radius: var(--border-radius);
+}
+
+@media screen and (max-width: 393px) {
+
+    /* --------------------------------------------------------------------------------- */
+    /* Bannière nous rejoindre  */
+
+    .block-btn-Join {
+        height: 7.0rem;
+        border-radius: var(--border-radius-mobile);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .link-btn-Join {
+        font-size: var(--Text-mobile);
+        height: 3.3rem;
+        width: 22.0rem;
+        border-radius: 10px;
+    }
+}

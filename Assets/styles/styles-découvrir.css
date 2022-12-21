@@ -1,0 +1,490 @@
+/* --------------------------------------------------------------------------------- */
+/* Section 1  */
+
+.Block-1 {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.Block-2 {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.Block-1-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--whiteBase);
+  height: 35.1rem;
+  width: 51.4rem;
+  gap: 20px;
+}
+
+.Block-2-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--whiteBase);
+  height: 35.1rem;
+  width: 51.4rem;
+  gap: 20px;
+}
+
+.IMG1 {
+  background-image: url(/Assets/images/EXPO1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 35.1rem;
+  width: 44.7rem;
+  box-shadow: -9px 9px 0 var(--whiteBase);
+  border-radius: var(--border-radius);
+}
+
+.IMG2 {
+  background-image: url(/Assets/images/EXPO2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 35.1rem;
+  width: 44.7rem;
+  box-shadow: 9px 9px 0 var(--whiteBase);
+  border-radius: var(--border-radius);
+}
+
+.Sous-titre {
+  font-family: var(--font-family);
+  font-size: var(--Sous-titre);
+  color: var(--whiteBase);
+}
+
+.Text {
+  font-family: var(--font-family);
+  font-size: var(--Text);
+  color: var(--whiteBase);
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Partie Accordéon */
+.btn-choice {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8.2rem;
+  width: 98.0rem;
+  margin: auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.4rem;
+  width: 25.8rem;
+  background-color: var(--whiteBase);
+  border-radius: var(--border-radius);
+}
+
+.lien-btn {
+  text-decoration: none;
+  list-style: none;
+}
+
+.div-line {
+  height: 8.2rem;
+  width: 98.0rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.line {
+  height: 0.2rem;
+  width: 100%;
+  background-color: var(--whiteBase);
+}
+
+.text-line {
+  margin-top: 20px;
+  font-family: var(--font-family);
+  font-size: var(--Text);
+  color: var(--whiteBase);
+  padding: 0 20px;
+}
+
+.block-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.block-right-mobile {
+  display: none;
+}
+
+.block-left-mobile {
+  display: none;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 53.7rem;
+  width: 94.9rem;
+}
+
+.block-int {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  height: 50.0rem;
+  width: 50.6rem;
+}
+
+.chevron {
+  padding: 0 20px;
+}
+
+.text-liens {
+  font-family: var(--font-family);
+  font-size: var(--Text);
+  color: var(--DarkBase);
+  padding: 0 20px;
+}
+
+.text-liens-dispo {
+  font-family: var(--font-family);
+  font-size: var(--Text);
+  color: rgb(70, 197, 91);
+  padding: 0 20px;
+}
+
+.text-liens-dispo-mobile {
+  display: none;
+}
+
+.text {
+  font-family: var(--font-family);
+  font-size: var(--Text);
+  color: var(--DarkBase);
+  padding: 10px;
+}
+
+.artist {
+  font-family: var(--font-family);
+  font-size: var(--Text);
+  color: var(--PinkGalaxy);
+  padding: 10px;
+}
+
+.img {
+  background-image: url(/Assets/images/Dropdown/gaming.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: var(--border-radius);
+
+  height: 50.0rem;
+  width: 42.4rem;
+}
+
+/* ACCORDION */
+
+.section-accordion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--whiteBase);
+
+  height: 8.2rem;
+  width: 98.0rem;
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion.active {
+  border-radius: 20px 20px 0 0;
+}
+
+.active,
+.accordion:hover {
+  box-shadow: 0px 6px 0 var(--PinkGalaxy), 0px 12px 0 var(--PurpleGalaxy);
+}
+
+.panel {
+  width: 98.0rem;
+  background-color: var(--whiteBase);
+  display: none;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0px 6px 0 var(--PinkGalaxy), 0px 12px 0 var(--PurpleGalaxy);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Media query */
+
+@media screen and (max-width: 393px) {
+
+  /* --------------------------------------------------------------------------------- */
+  /* Section 1  */
+
+  .Block-1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .Block-2 {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .Block-1-text {
+    flex-direction: column;
+    height: 10.9rem;
+    width: 33.6rem;
+    gap: 20px;
+  }
+
+  .Block-2-text {
+    flex-direction: column;
+    height: 10.9rem;
+    width: 33.6rem;
+    gap: 20px;
+  }
+
+  .IMG1 {
+    height: 16.1rem;
+    width: 34.2rem;
+    box-shadow: -9px 9px 0 var(--whiteBase);
+    border-radius: var(--border-radius-mobile);
+  }
+
+  .IMG2 {
+    height: 16.1rem;
+    width: 34.2rem;
+    box-shadow: 9px 9px 0 var(--whiteBase);
+    border-radius: var(--border-radius-mobile);
+    margin-bottom: 20px;
+  }
+
+  .Sous-titre {
+    font-size: var(--Sous-titre-mobile);
+  }
+
+  .Text {
+    font-size: var(--Text-mobile);
+  }
+
+  /* --------------------------------------------------------------------------------- */
+  /* Partie Accordéon */
+
+  .text-liens-dispo {
+    display: none;
+  }
+
+  .section-accordion {
+    display: none;
+  }
+
+  .section-accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 5.0rem;
+    width: 34.3rem;
+    border-radius: var(--border-radius-mobile);
+
+    transition: 0.4s;
+  }
+
+  .accordion.active {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .active,
+  .accordion:hover {
+    box-shadow: 0px 6px 0 var(--PinkGalaxy), 0px 12px 0 var(--PurpleGalaxy);
+  }
+
+  .panel {
+    width: 34.3rem;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 6px 0 var(--PinkGalaxy), 0px 12px 0 var(--PurpleGalaxy);
+  }
+
+  /* Partie Accordéon */
+
+  .line-sep {
+    height: 0.2rem;
+    width: 28.8rem;
+    background-color: var(--PinkGalaxy);
+  }
+
+  .div-line-sep {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .btn-choice {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5.0rem;
+    width: 34.3rem;
+    margin: auto;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.0rem;
+    width: 14.2rem;
+    border-radius: var(--border-radius-mobile);
+  }
+
+  .lien-btn {
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .div-line {
+    height: 5.2rem;
+    width: 33.7rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .text-line {
+    margin-top: 10px;
+    font-size: var(--Text-mobile);
+    padding: 0 10px;
+  }
+
+  .block-right {
+    display: none;
+  }
+
+  .block-right-mobile {
+    display: flex;
+  }
+
+  .block-left {
+    display: none;
+  }
+
+  .block-left-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .block-text-lien {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    height: 29.5rem;
+    width: 28.8rem;
+  }
+
+  .block-int {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    height: 18.2rem;
+    width: 11.1rem;
+  }
+
+  .chevron {
+    padding: 0 20px;
+  }
+
+  .text-liens {
+    font-size: var(--Text-mobile);
+    padding: 0 20px;
+  }
+
+  .text-liens-dispo {
+    font-size: var(--Text-mobile);
+    color: rgb(70, 197, 91);
+    padding: 0 20px;
+  }
+
+  .text-liens-dispo-mobile {
+    display: flex;
+    font-family: var(--font-family);
+    font-size: var(--Text-mobile);
+    color: rgb(70, 197, 91);
+  }
+
+  .text {
+    font-size: var(--Text-mobile);
+    padding: 0;
+  }
+
+  .artist {
+    font-size: var(--Text-mobile);
+    padding: 0;
+  }
+
+  .img {
+    border-radius: var(--border-radius-mobile);
+
+    height: 18.2rem;
+    width: 14.7rem;
+  }
+}
